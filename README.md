@@ -27,9 +27,9 @@
 
 ### Introduction
 
-Horizon AI Boilerplate is the first open-source Admin Dashboard OpenAI ChatGPT AI Template made for Shadcn UI, NextJS, and Tailwind CSS! Start creating outstanding Chat AI SaaS Apps faster.
+Shinobu is a modern DSA (Data Structures & Algorithms) tracker designed with a dark theme and butterfly symbol. Built with Shadcn UI, NextJS, and Tailwind CSS, Shinobu helps you master coding problems and track your progress seamlessly.
 
-It comes with over 30+ dark/light frontend individual elements, like buttons, inputs, navbars, nav tabs, cards, or alerts, giving you the freedom of choosing and combining.
+It comes with a comprehensive platform featuring analytics, problem tracking, difficulty levels, and an intuitive dashboard for monitoring your learning journey.
 
 ### Documentation
 

@@ -1,73 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/**
+ * ⭐ THEME COLOR CUSTOMIZATION
+ * 
+ * To change your entire site's color palette, edit ONLY the 4 hex colors below:
+ * - Color 1 (Primary/Accent): Used for buttons, links, highlights
+ * - Color 2 (Light): Used for text, foreground
+ * - Color 3 (Dark Accent): Used for secondary accents
+ * - Color 4 (Background): Used for main background
+ * 
+ * Example palettes:
+ * - Dark & Gold: #C07F00, #FFD95A, #8B5A00, #4C3D3D
+ * - Blue & Mint: #80A1BA, #91C4C3, #5A7A91, #1A1F2E
+ * - Purple & Lavender: #7B68EE, #B19CD9, #5A4AB8, #2D1B3D
+ * - Current: #D69830, #FFF07A, #AB3124, #5F233F
+ */
+
 :root {
   --radius: 10px;
-  --chart: #0F172A;
-  --background: 0 0% 100%;
-  --foreground: 240, 10%, 4%;
-  --muted: 210 40% 96.1%;
-  --muted-foreground: 215.4 16.3% 46.9%;
-  --card: 0, 0%, 100%;
-  --card-foreground: 0, 0%, 100%;
-  --popover: 0, 0%, 100%;
-  --popover-foreground: 0, 0%, 100%;
-  --border: 214.3 31.8% 91.4%;
-  --input: 214.3 31.8% 91.4%;
-  --primary: 140 30% 55%; 
-  /* ^ this is green */
-  --primary-foreground: 210 40% 98%;
-  --secondary: 210 40% 96.1%;
-  --secondary-foreground: 240, 10%, 4%;
-  --accent: 210 40% 96.1%;
-  --accent-foreground: 240, 10%, 4%;
+  /* Dark background with green primary accents */
+  --chart: #34D399;
+  --background: 142 12% 6%; /* very dark, subtle green tone */
+  --foreground: 0 0% 98%; /* near-white text */
+  --muted: 142 8% 45%;
+  --muted-foreground: 0 0% 98%;
+  --card: 142 10% 10%;
+  --card-foreground: 0 0% 98%;
+  --popover: 142 10% 9%;
+  --popover-foreground: 0 0% 98%;
+  --border: 142 8% 20%;
+  --input: 142 10% 12%;
+  --primary: 150 60% 45%; /* green primary */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 150 42% 32%;
+  --secondary-foreground: 0 0% 100%;
+  --accent: 150 60% 45%;
+  --accent-foreground: 0 0% 100%;
   --destructive: 0 100% 50%;
-  --destructive-foreground: 210 40% 98%;
-  --ring: transparent;
-  --chart-1: #52525b;
-  --chart-2: #D4D4D8;
-  --chart-3: #030712;
-  --chart-4: #71717a;
-  --chart-5: #a1a1aa;
+  --destructive-foreground: 0 0% 100%;
+  --ring: 150 60% 45%;
+  --chart-1: #10B981;
+  --chart-2: #34D399;
+  --chart-3: #86EFAC;
+  --chart-4: #BBF7D0;
+  --chart-5: #9CA3AF;
+  
+  /* Custom color variables for components */
+  --color-bg: #071014;
+  --color-primary: #16A34A;
+  --color-primary-light: #34D399;
+  --color-primary-lighter: #BBF7D0;
+  --color-text-primary: #E6FFF4;
+  --color-text-secondary: #A7F3D0;
+  --color-accent: #34D399;
 }
 
 :root.dark {
-  --background: 240 10% 4%;
-  --foreground: 0, 0%, 100%;
-  --chart: 0, 0%, 100%;
-  --muted: 210 40% 96.1%;
-  --muted-foreground: 215.4 16.3% 46.9%;
-  --card: 240 10% 4%;
-  --card-foreground: 0 0% 100%;
-  --popover: 240 10% 4%;
-  --popover-foreground: 0 0% 100%;
-  --border: 240 4% 16%;
-  --input: 240 4% 16%;
-  --primary: 0 0% 100%;
-  --primary-foreground: 240 10% 4%;
-  --secondary: 210 40% 96.1%;
-  --secondary-foreground: 222.2 47.4% 11.2%;
-  --accent: 240 4% 16%;
-  --accent-foreground: 222.2 47.4% 11.2%;
+  --chart: #34D399;
+  --background: 142 12% 6%;
+  --foreground: 0 0% 98%;
+  --muted: 142 8% 45%;
+  --muted-foreground: 0 0% 98%;
+  --card: 142 10% 10%;
+  --card-foreground: 0 0% 98%;
+  --popover: 142 10% 9%;
+  --popover-foreground: 0 0% 98%;
+  --border: 142 8% 20%;
+  --input: 142 10% 12%;
+  --primary: 150 60% 45%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 150 42% 32%;
+  --secondary-foreground: 0 0% 100%;
+  --accent: 150 60% 45%;
+  --accent-foreground: 0 0% 100%;
   --destructive: 0 100% 50%;
-  --destructive-foreground: 210 40% 98%;
-  --ring: 0 0% 0%;
-  --chart-1: #ffffff;
-  --chart-2: #71717A;
-  --chart-3: #030712;
-  --chart-4: #71717a;
-  --chart-5: #a1a1aa;
+  --destructive-foreground: 0 0% 100%;
+  --ring: 150 60% 45%;
+  --chart-1: #10B981;
+  --chart-2: #34D399;
+  --chart-3: #86EFAC;
+  --chart-4: #BBF7D0;
+  --chart-5: #9CA3AF;
+  
+  /* Custom color variables for components */
+  --color-bg: #071014;
+  --color-primary: #16A34A;
+  --color-primary-light: #34D399;
+  --color-primary-lighter: #BBF7D0;
+  --color-text-primary: #E6FFF4;
+  --color-text-secondary: #A7F3D0;
+  --color-accent: #34D399;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   color-scheme: unset !important;
 }
 
@@ -140,26 +177,26 @@ input:checked.defaultCheckbox::before {
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --background: 142 12% 6%;
+    --foreground: 0 0% 98%;
+    --sidebar-background: 142 10% 8%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 150 60% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 142 9% 10%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 142 8% 14%;
+    --sidebar-ring: 150 60% 45%;
       }
   .dark {
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-background: 142 10% 8%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 150 60% 40%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 142 9% 10%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 142 8% 14%;
+    --sidebar-ring: 150 60% 45%;
   }
 }
 

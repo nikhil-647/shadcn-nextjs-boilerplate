@@ -47,13 +47,16 @@ const config = {
   	},
   	extend: {
   		fontFamily: {
-  			jakarta: [
-  				'Inter',
+  			sans: [
+  				'Geist',
+  				'-apple-system',
+  				'BlinkMacSystemFont',
+  				'Segoe UI',
   				'sans-serif'
   			],
-  			poppins: [
-  				'Poppins',
-  				'sans-serif'
+  			mono: [
+  				'Geist Mono',
+  				'monospace'
   			]
   		},
   		height: {

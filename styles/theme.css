@@ -1,0 +1,26 @@
+/**
+ * Global CSS Variables based on Theme Configuration
+ * These are automatically set based on lib/theme-config.ts
+ */
+
+:root {
+  /* Primary Colors */
+  --color-primary: #435663;
+  --color-primary-light: #A3B087;
+  --color-primary-lighter: #FFF8D4;
+  
+  /* Background Colors */
+  --color-bg: #313647;
+  --color-bg-dark: #1F2531;
+  --color-bg-light: #444A5C;
+  
+  /* Text Colors */
+  --color-text-primary: #FFF8D4;
+  --color-text-secondary: #A3B087;
+  --color-text-muted: rgba(163, 176, 135, 0.5);
+  
+  /* Accent Colors */
+  --color-accent: #435663;
+  --color-accent-dark: #2D3E4F;
+  --color-accent-light: #556B7D;
+}
